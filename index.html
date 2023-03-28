@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="container mx-auto">
+        <h4 class="text-center">TEMPERATURE CONVERTER</h4>
+
+        <div class="select">
+            <label for="temp">Select</label> <br>
+            <select name="temp_diff" id="temp_diff">
+                <option>Celsius</option>
+                <option>Fahrenheit</option>
+                <option>Kelvin</option>
+            </select>
+        </div>
+
+        <div class="degrees">
+            <label for="degrees">Degrees</label><br>
+            <input  id="degree" type="text"/>
+        </div>
+
+        <div class="results" >
+            <p id="result">Result</p>
+        </div>
+        <div class="button">
+            <button onclick="convert()" class="convert">Convert</button>
+        </div>
+    </div>
+</body>
+</html>
